@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Parallax</title>
+	<meta charset="utf-8">
+
+	<style type="text/css">
+	
+	/*configurações padrão da pagina*/	
+		body, html {
+			margin: 0 ;
+			font: 16px "Lato", sans-serif;
+			color:#777;
+			height: 100%;
+		}
+
+		.conteudo{
+			color: #777;
+			background-color: white;
+			text-align: justify;
+			padding: 50px 80px;
+		}
+
+		h3{
+			text-transform: uppercase;
+			color: #111;
+			text-align: center;
+		}
+
+		p{
+			margin-bottom: 20px;
+
+		}
+
+	/*  ----- Efeito Parallax ----- */
+		
+		.caixa1, .caixa2, .caixa3, .caixa4{
+			position: relative;
+			height: 100%;
+			opacity: 0.8;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+		}
+
+		.caixa1{
+			background-image: url(imagens/imagem1.jpg);
+		}
+
+		.caixa2{
+			background-image: url(imagens/imagem2.jpg);
+
+		}
+
+		.caixa3{
+			background-image: url(imagens/imagem3.jpg);
+
+		}
+
+		.caixa4{
+			background-image: url(imagens/imagem4.jpg);
+
+		}
+
+		.conteudo-titulo {
+			position: absolute;
+			left: 0;
+			top: 45%;
+			width: 100%;
+			text-align: center;
+		}
+
+		.conteudo-titulo span.titulo{
+			color: #fff;
+			background-color: #111;
+			padding: 18px;
+			font-size: 25px,
+			letter-spacing: 5px;
+			text-transform: uppercase;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<div class="caixa1">
+		<div class="conteudo-titulo">
+			<span class="titulo">Efeito - Parallax</span>
+		</div>
+	</div>
+
+	<div class="conteudo">
+		<h3>O que é o efeito Parallax?</h3>
+		<p>Parallax é o nome dado ao efeito de diferentes objetos parecerem estar em diferentes posições ou direções quando observados em diferentes posições.</p>
+
+
+		<p>O parallax começou na animação tradicional e até já foi usado no filme Branca de Neve e os Sete Anões da Disney, e em videogames como Super Mário. Com os avanços em CSS e HTML, os efeitos parallax evoluíram posteriormente, para o mundo do web design como o conhecemos hoje.</p>
+
+
+	</div>
+
+	<div class="caixa2">
+		<div class="conteudo-titulo">
+			<span class="titulo">Ilusão de ótica</span>
+		</div>
+	</div>
+
+	<div class="conteudo">
+		<h3>Ilusão de ótica?</h3>
+		<p>O efeito parallax é baseado em uma ilusão de ótica causada pelo fato de que o olho humano considera que os objetos que estão perto são maiores do que os que estão mais afastados. O resultado é que temos a percepção de que os objetos mais distantes movimentam-se mais lentamente do que os que estão próximos.</p>
+
+		<p>Esta percepção de que o movimento do plano de fundo é mais lento do que o movimento do primeiro plano já vem sendo usada há bastante tempo em diferentes meios, promovendo um efeito realista.</p>
+
+
+	</div>
+
+	<div class="caixa3">
+		<div class="conteudo-titulo">
+			<span class="titulo">Na web</span>
+		</div>
+	</div>
+
+	<div class="conteudo">
+		<h3>Parallax na Web</h3>
+
+		<p>Na web é usado na maioria das vezes em sites de uma única página, que envolve o fundo se movendo em um ritmo mais lento em primeiro plano, criando um efeito 3D quando você rolar a página. Ou seja, o parallax é uma técnica que causa uma ilusão de profundidade nas interfaces.</p>
+
+
+	</div>
+
+	<div class="caixa4">
+		<div class="conteudo-titulo">
+			<span class="titulo">FIM!</span>
+		</div>
+	</div>
+
+
+
+</body>
+</html>
